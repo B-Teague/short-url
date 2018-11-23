@@ -1,50 +1,62 @@
-/* styles */
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 25px;
+  font-family: 'Itim', sans-serif;
+  font-size: 1.25em;
+  margin: 25px 15px;
+  background-color: #7686AF;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 48px;
-  color: pink;
+header {
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #FFFFFF, #AEF2E3);
+  border-radius: 10px;
+  margin-bottom: 0px;
+  padding: 15px;
+  font-size: 1.5em;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,1);
 }
 
-h3 {
-  color: lightseagreen;
-  margin-bottom: 5px;
+section {
+  background-image: linear-gradient(to bottom right, #FFFFFF, #ABCDEF);
+  padding: 10px 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,1);
 }
 
-input,
-textarea {
-  border: 1px solid #C3C3C3;
-  border-radius: 3px;
-  padding: 5px;
-  font-size: 16px;
-  max-width: 240px;
-  width: 100%;
-}
-
-.button {
+label{
   display: block;
-  margin-top: 20px;
 }
 
-a + a {
-  padding: 10px;
+input{
+  font-family: 'Itim', sans-serif;
+  font-size: 1.25em;
+  display: block;
+  cursor: initial;
+  margin: 10px 0px;
 }
 
-footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  border-top: 1px solid lightgrey;
+button{
+  font-family: 'Itim', sans-serif;
+  font-size: 1.25em;
+  display: block;
 }
 
-footer > a {
-  color: #BBBBBB;
+h2 {
+ margin: 10px 0px; 
+}
+
+p, code {
+  padding-left: 40px;
+  display: block;
+  word-wrap: break-word;
+}
+
+article {
+  margin: 0px auto;
+}
+
+@media only screen and (orientation: landscape) {
+  article {
+    max-width: 750px;
+  }
 }
