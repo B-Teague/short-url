@@ -30,6 +30,7 @@ label{
 input{
   font-family: 'Itim', sans-serif;
   font-size: 1.25em;
+  border-radius: 10px;
   display: block;
   cursor: initial;
   margin: 10px 0px;
@@ -39,6 +40,9 @@ button{
   font-family: 'Itim', sans-serif;
   font-size: 1.25em;
   display: block;
+  background-image: linear-gradient(#FFFFFF, #AAAAAA);
+  border-radius: 999px;
+  border: none;
 }
 
 h2 {
