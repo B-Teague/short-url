@@ -9,7 +9,7 @@ const dbConnect = (function() {
         this.db = await MongoClient.connect(MLAB_URI);
         return this.db;
       } catch (err){
-        throw new Error('Error connecting to Mongo Client: ');// + err);
+        throw new Error('Error connecting to Mongo Client: ' + err);
       }    
   };
   
@@ -18,7 +18,8 @@ const dbConnect = (function() {
       return this.db;
     } else {
       try{
-        return await this.init();
+        await this.init();
+        return this.db;
       } catch (err) {
         throw err;
       }

@@ -5,7 +5,7 @@ exports.HOMEPAGE = async function(req, res, next) {
   try {
     const db = await dbConnect.getDb();
     res.sendFile('/app/views/index.html');  
-  } catch (err) {
-    next({status: 500, message: err});
+  } catch (error) {
+    next(error);
   }
 };
